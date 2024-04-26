@@ -1,0 +1,276 @@
+body{
+    margin: 0;
+    overflow-x: hidden; 
+}
+
+
+.header{
+    position: relative;
+    margin-bottom: 0;
+}
+
+.header-logo{
+    margin: 20px;
+    position: absolute;
+    width: 30%;
+}
+
+img{
+    width: 100%;
+}
+
+.rect{
+    width: 400px;
+    margin-top: -170px;
+    position:absolute;
+    border-radius: 30px;
+}
+
+#imformation{
+    margin-top:-30px;
+    width: 100%;
+    height: 330px;
+    background-image: url(images/hougan.jpg);
+    padding: 0;
+}
+
+.en {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    border: 2px solid #000;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+ }
+
+ .en::before{
+    content:attr(data-number);
+    position: absolute;
+    margin: -48px 0px 1px;
+    color: #000;
+    font-size: 57px;
+    font-weight: 800;
+    z-index: 1;
+   
+ }
+
+ ul{
+    display: flex;
+   justify-content: space-around;
+   margin: 20px;
+   padding-left: 0;
+ }
+
+li{
+    margin-top: 60px;
+    list-style: none;
+}
+
+.sab-tittle{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 0;
+    font-size: 20px;
+}
+
+h2{
+    margin-left: 50px;
+}
+
+h2 span{
+    color: #FFB800;
+    font-size: 20px;
+}
+ 
+h2 {
+    position: relative;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+h2::before {
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(203, 203, 203, 0.402);
+    font-size: 90px;
+    text-transform: uppercase;
+    content: 'wearcorectionwearcorection';
+    z-index: -1;
+}
+
+.about-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+p{
+    margin: 140px 0 0 130px;
+    font-size: 20px;
+}
+
+.about-content img{
+    width: 40%;
+    height: auto;
+   filter: drop-shadow(rgba(255, 153, 0, 0.35) 0px 5px 15px);
+}
+
+/* menu */
+#menu{
+   background-image: url(images/hougan.jpg);
+    margin-top: 50px;
+    height: auto;
+    padding:30px;
+}
+
+
+@media screen and (min-width: 1080px) {
+    en{
+        width: 700px;
+        height: 700px;
+    }
+  }
+
+  .item-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  .item-list .item {
+    width: 31%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .item-list .item .image {
+    margin: 0;
+    padding: 0;
+  }
+  .item-list .item .image img {
+    width: 100%;
+  }
+  .item-list .item .title {
+    margin: 10px 0 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .item-list .item .description {
+    margin: 5px 0 0;
+    padding: 0;
+    font-size: 16px;
+  }
+  
+
+/*スライダー*/
+#slick{
+    margin-top: 90px;
+    margin-bottom: 90px;
+    position: relative;
+}
+
+.rectangle {
+    float: right;
+    z-index: -11;
+    margin-right: 0;
+    width: 50%;
+    height:90%;
+    background: #FFB800;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.5;
+    border-radius:0 30px 30px 0 ;
+  }
+
+.code{
+    color: #FFB800;
+    margin: 30px;
+    text-align: center;
+}
+
+span{
+    color: #000;
+}
+
+.slider img {
+    width:100%;/*スライダー内の画像を横幅100%に*/
+    height: 80%;
+    height:auto;
+    border-radius: 30px;
+    border: 10px #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+
+
+.slider .slick-slide {
+    margin:0 10px;/*スライド左右の余白調整*/
+}
+
+footer{
+    color: #808080;
+ background: #FFB800;
+ text-align: center;
+ padding: 30px;
+}
+
+.copyright{
+    margin: 0;
+ padding: 20px 0 0 0;
+}
+
+/* モバイル */
+@media screen and (max-width: 820px){
+    html{
+        box-sizing : border-box;
+        overflow-x: hidden; 
+    }
+
+    
+    #imformation{
+        width: 100%;
+        height: 230px;
+        padding: 0;
+        justify-content: center;
+    }
+
+h2{
+    font-size: 25px;
+}
+
+    .en{
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        margin-top: 50px;
+    }
+    .sub_tittle{
+        font-size: 10px;
+    }
+    p{
+        margin: 20px;
+        font-size: 10px;
+    }
+    .en::before{
+        font-size: 20px;
+        margin-top: -80px;
+    }
+    #about-content{
+        display: none !important;
+    }
+    .about-content img{
+        height: auto;
+    }
+    .rect{
+        visibility:hidden;
+    }
+    .sub{
+        justify-content: space-around;
+    }
+    #slick{
+        margin-top: 0;
+    }
+ }
